@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'inter' : ['Inter', 'sans-serif']
+          },
+          colors: {
+            'mywhite': 'hsl(0, 0%, 100%)',
+            'mygreen': 'hsl(75, 94%, 57%)',
+            'mydark-grey': 'hsl(0, 0%, 12%)',
+            'myoff-black': 'hsl(0, 0%, 8%)',
+            'mygrey': '#c2c2c2'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-inter text-sm">
+
+  <div class="h-screen w-screen flex flex-col justify-center items-center bg-myoff-black">
+    
+    <!-- Card -->
+    <div class="flex  flex-auto items-center justify-center">
+      <div class="items-center w-96 p-10 bg-mydark-grey rounded-xl space-y-7">
+
+        <img src="./assets/images/avatar-jessica.jpeg" alt="profile picture" class="size-24 rounded-full mx-auto">
+    
+        <div class="font-bold">
+          <h1 class="text-center text-2xl text-mywhite">Jessica Randall</h1>
+          <p class="text-center text-mygreen">London, United Kingdom</p>
+        </div>
+    
+        <div>
+          <p class="text-center text-mygrey">"Front-end developer and avid reader."</p>
+        </div>
+    
+        <div class="flex flex-col space-y-4 text-mywhite text-center font-bold">
+          <div class="bg-mygrey/25 p-3 rounded-lg hover:bg-mygreen hover:text-myoff-black hover:cursor-pointer">GitHub</div>
+          <div class="bg-mygrey/25 p-3 rounded-lg hover:bg-mygreen hover:text-myoff-black hover:cursor-pointer">Frontend Mentor</div>
+          <div class="bg-mygrey/25 p-3 rounded-lg hover:bg-mygreen hover:text-myoff-black hover:cursor-pointer">LinkedIn</div>
+          <div class="bg-mygrey/25 p-3 rounded-lg hover:bg-mygreen hover:text-myoff-black hover:cursor-pointer">Twitter</div>
+          <div class="bg-mygrey/25 p-3 rounded-lg hover:bg-mygreen hover:text-myoff-black hover:cursor-pointer">Instagram</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is footer -->
+    <div class="w-full text-center text-mywhite p-3">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline decoration-solid hover:text-mygreen">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/rskomda" target="_blank" class="underline decoration-solid hover:text-mygreen">Regina Martha</a>.
+    </div>
+
+  </div>
+
+</body>
+
+</html>
